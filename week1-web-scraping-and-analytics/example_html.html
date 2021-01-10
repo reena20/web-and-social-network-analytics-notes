@@ -8,6 +8,16 @@
 	padding:22px;
 }
 </style>
+    
+<script type="text/javascript">
+  var numberOfClicks = 0;
+  function clickedButton()
+  {
+      numberOfClicks += 1;
+    document.getElementById("clickableButton").text="GOOD JOB! You clicked me "+numberOfClicks+" times. If you reload the page I will go back to the original state :)"; 
+  }
+</script>
+
 </head>
 <body>
 
@@ -19,6 +29,7 @@
 Ocassionaly, an URL is present <a href="http://www.ed.ac.uk">UoE</a>
 
 </p>
+    
 
 <h1 title="A header">Some other stuff</h1>
 
@@ -40,6 +51,8 @@ Ocassionaly, an URL is present <a href="http://www.ed.ac.uk">UoE</a>
     <td>900</td>
   </tr>
 </table>
+    
+<a id="clickableButton" href="#" target="none" onclick="clickedButton()">CLICK ME!</a>
 
 <div class="hipster">
 <h2>A Dangerous-Looking Header</h2>
